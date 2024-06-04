@@ -37,7 +37,7 @@ const quizzes = [
         "correct": "c"
     },
     {
-        "question": "What i my name?",
+        "question": "What is my name?",
         "a": "Narendra Modi",
         "b": "Rishabh Shah",
         "c": "Akshay Kumar",

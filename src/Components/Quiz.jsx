@@ -29,15 +29,15 @@ const Box = ({ current, next }) => {
         <div className='w-[50%] p-5 border shadow-lg rounded-md overflow-hidden'>
             <div className='p-2 text-3xl'> {current + 1}) {quizzes[current].question}</div>
             <div className='grid grid-cols-2 mt-3'>
-                <div className={`p-2 border ${ans === "a" ? 'bg-blue-400 text-white' : ''} hover:bg-blue-400 hover:text-white duration-200 cursor-pointer`} onClick={() => setAns("a")}>{quizzes[current].a}</div>
-                <div className={`p-2 border ${ans === "b" ? 'bg-blue-400 text-white' : ''} hover:bg-blue-400 hover:text-white duration-200 cursor-pointer`} onClick={() => setAns("b")}>{quizzes[current].b}</div>
-                <div className={`p-2 border ${ans === "c" ? 'bg-blue-400 text-white' : ''} hover:bg-blue-400 hover:text-white duration-200 cursor-pointer`} onClick={() => setAns("c")}>{quizzes[current].c}</div>
-                <div className={`p-2 border ${ans === "d" ? 'bg-blue-400 text-white' : ''} hover:bg-blue-400 hover:text-white duration-200 cursor-pointer`} onClick={() => setAns("d")}>{quizzes[current].d}</div>
+                <div className={`p-2 border ${ans === "a" ? 'bg-blue-400 text-white' : ''} hover:bg-blue-400 hover:text-white duration-200 cursor-pointer`} onClick={() => setAns("a")}>A.&nbsp;&nbsp; {quizzes[current].a}</div>
+                <div className={`p-2 border ${ans === "b" ? 'bg-blue-400 text-white' : ''} hover:bg-blue-400 hover:text-white duration-200 cursor-pointer`} onClick={() => setAns("b")}>B.&nbsp;&nbsp; {quizzes[current].b}</div>
+                <div className={`p-2 border ${ans === "c" ? 'bg-blue-400 text-white' : ''} hover:bg-blue-400 hover:text-white duration-200 cursor-pointer`} onClick={() => setAns("c")}>C.&nbsp;&nbsp; {quizzes[current].c}</div>
+                <div className={`p-2 border ${ans === "d" ? 'bg-blue-400 text-white' : ''} hover:bg-blue-400 hover:text-white duration-200 cursor-pointer`} onClick={() => setAns("d")}>D.&nbsp;&nbsp; {quizzes[current].d}</div>
             </div>
             <div className='flex justify-between'>
-                <div className='cursor-pointer h-[30px] rounded px-3 m-5  bg-orange-500 text-white' onClick={() => setAns("")}>Reset</div>
-                <div className='cursor-pointer h-[30px] rounded px-3 m-5 bg-green-500 text-white' onClick={saveHandler}>Save & Next</div>
-                <div className='cursor-pointer h-[30px] rounded px-3 m-5 bg-red-500 text-white' onClick={() => setExit(true)}>Exit</div>
+                <div className='cursor-pointer h-[30px] rounded px-5 m-5  bg-orange-500 text-white' onClick={() => setAns("")}>Reset</div>
+                <div className='cursor-pointer h-[30px] rounded px-5 m-5 bg-green-500 text-white' onClick={saveHandler}>Save & Next</div>
+                <div className='cursor-pointer h-[30px] rounded px-5 m-5 bg-red-500 text-white' onClick={() => setExit(true)}>Exit</div>
             </div>
         </div>
     )
