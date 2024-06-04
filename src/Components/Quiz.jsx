@@ -26,7 +26,7 @@ const Box = ({ current, next }) => {
         }
     }
     return (
-        <div className='w-[40%] border shadow-lg rounded-md overflow-hidden'>
+        <div className='w-[50%] p-5 border shadow-lg rounded-md overflow-hidden'>
             <div className='p-2 text-3xl'> {current + 1}) {quizzes[current].question}</div>
             <div className='grid grid-cols-2 mt-3'>
                 <div className={`p-2 border ${ans === "a" ? 'bg-blue-400 text-white' : ''} hover:bg-blue-400 hover:text-white duration-200 cursor-pointer`} onClick={() => setAns("a")}>{quizzes[current].a}</div>
